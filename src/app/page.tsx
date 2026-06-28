@@ -8,13 +8,14 @@ export default function Home() {
       alignItems: 'center',
       justifyContent: 'center',
       padding: '20px',
+      fontFamily: 'system-ui, -apple-system, sans-serif',
     }}>
       <div style={{ textAlign: 'center', maxWidth: '896px' }}>
-        <h1 style={{ fontSize: '3.75rem', fontWeight: 'bold', marginBottom: '24px' }}>Science For Tomorrow</h1>
-        <p style={{ fontSize: '1.5rem', marginBottom: '32px', color: '#d1d5db' }}>
+        <h1 style={{ fontSize: '3.75rem', fontWeight: 'bold', margin: '0 0 24px 0' }}>Science For Tomorrow</h1>
+        <p style={{ fontSize: '1.5rem', margin: '0 0 32px 0', color: '#d1d5db' }}>
           Investing in Humanity's Future Through Scientific Discovery
         </p>
-        <p style={{ fontSize: '1.125rem', marginBottom: '48px', color: '#9ca3af' }}>
+        <p style={{ fontSize: '1.125rem', margin: '0 0 48px 0', color: '#9ca3af' }}>
           Founded by Ved Saparia
         </p>
         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -25,7 +26,7 @@ export default function Home() {
             fontWeight: 'bold',
             borderRadius: '8px',
             textDecoration: 'none',
-            transition: 'background 0.3s',
+            display: 'inline-block',
           }}>
             Learn More
           </a>
@@ -36,7 +37,8 @@ export default function Home() {
             fontWeight: 'bold',
             borderRadius: '8px',
             textDecoration: 'none',
-            transition: 'background 0.3s',
+            display: 'inline-block',
+            background: 'transparent',
           }}>
             Explore
           </a>
