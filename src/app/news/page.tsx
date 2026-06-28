@@ -1,9 +1,14 @@
 export default function News() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-black text-white p-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold mb-6">Latest Scientific News</h1>
-        <p className="text-lg text-gray-300">Stay updated with groundbreaking discoveries.</p>
+    <div style={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #1e3a8a 0%, #6b21a8 100%)',
+      color: 'white',
+      padding: '32px',
+    }}>
+      <div style={{ maxWidth: '896px', margin: '0 auto' }}>
+        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '24px' }}>Latest Scientific News</h1>
+        <p style={{ fontSize: '1.125rem', color: '#d1d5db' }}>Stay updated with groundbreaking discoveries.</p>
       </div>
     </div>
   )

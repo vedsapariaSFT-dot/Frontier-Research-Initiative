@@ -1,19 +1,43 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-black text-white flex items-center justify-center">
-      <div className="text-center max-w-4xl px-4">
-        <h1 className="text-6xl font-bold mb-6">Science For Tomorrow</h1>
-        <p className="text-2xl mb-8 text-gray-300">
+    <div style={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #1e3a8a 0%, #6b21a8 100%)',
+      color: 'white',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '20px',
+    }}>
+      <div style={{ textAlign: 'center', maxWidth: '896px' }}>
+        <h1 style={{ fontSize: '3.75rem', fontWeight: 'bold', marginBottom: '24px' }}>Science For Tomorrow</h1>
+        <p style={{ fontSize: '1.5rem', marginBottom: '32px', color: '#d1d5db' }}>
           Investing in Humanity's Future Through Scientific Discovery
         </p>
-        <p className="text-lg text-gray-400 mb-12">
+        <p style={{ fontSize: '1.125rem', marginBottom: '48px', color: '#9ca3af' }}>
           Founded by Ved Saparia
         </p>
-        <div className="flex gap-4 justify-center flex-wrap">
-          <a href="/about" className="px-8 py-3 bg-cyan-500 hover:bg-cyan-400 text-black font-bold rounded-lg transition">
+        <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <a href="/about" style={{
+            padding: '12px 32px',
+            background: '#06b6d4',
+            color: 'black',
+            fontWeight: 'bold',
+            borderRadius: '8px',
+            textDecoration: 'none',
+            transition: 'background 0.3s',
+          }}>
             Learn More
           </a>
-          <a href="/organizations" className="px-8 py-3 border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/20 font-bold rounded-lg transition">
+          <a href="/organizations" style={{
+            padding: '12px 32px',
+            border: '2px solid #06b6d4',
+            color: '#06b6d4',
+            fontWeight: 'bold',
+            borderRadius: '8px',
+            textDecoration: 'none',
+            transition: 'background 0.3s',
+          }}>
             Explore
           </a>
         </div>

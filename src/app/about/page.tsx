@@ -1,18 +1,19 @@
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-black text-white p-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold mb-6">About Science For Tomorrow</h1>
-        <p className="text-xl text-gray-300 mb-6">
-          Founded by Ved Saparia, Science For Tomorrow is dedicated to inspiring scientific curiosity and connecting people with world-class research organizations.
+    <div style={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #1e3a8a 0%, #6b21a8 100%)',
+      color: 'white',
+      padding: '32px',
+    }}>
+      <div style={{ maxWidth: '896px', margin: '0 auto' }}>
+        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '24px' }}>About Science For Tomorrow</h1>
+        <p style={{ fontSize: '1.25rem', color: '#d1d5db', marginBottom: '24px' }}>
+          Founded by Ved Saparia, Science For Tomorrow is dedicated to inspiring scientific curiosity.
         </p>
-        <h2 className="text-3xl font-bold mt-10 mb-4">Our Mission</h2>
-        <p className="text-lg text-gray-400 mb-6">
-          To inspire scientific curiosity, connect researchers with global audiences, and support organizations advancing humanity through groundbreaking research.
-        </p>
-        <h2 className="text-3xl font-bold mt-10 mb-4">Our Vision</h2>
-        <p className="text-lg text-gray-400">
-          A world where scientific knowledge is universally accessible and every person understands their role in humanity's scientific progress.
+        <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginTop: '40px', marginBottom: '16px' }}>Our Mission</h2>
+        <p style={{ fontSize: '1.125rem', color: '#9ca3af', marginBottom: '24px' }}>
+          To inspire scientific curiosity, connect researchers with global audiences, and support organizations advancing humanity.
         </p>
       </div>
     </div>

@@ -1,10 +1,16 @@
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-black text-white p-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold mb-6">Get In Touch</h1>
-        <p className="text-lg text-gray-300">Have questions? We'd love to hear from you.</p>
-        <p className="text-lg text-cyan-400 mt-6">Email: contact@sciencefortomorrow.com</p>
+    <div style={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #1e3a8a 0%, #6b21a8 100%)',
+      color: 'white',
+      padding: '32px',
+    }}>
+      <div style={{ maxWidth: '896px', margin: '0 auto' }}>
+        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '24px' }}>Get In Touch</h1>
+        <p style={{ fontSize: '1.125rem', color: '#d1d5db' }}>Have questions? We\'d love to hear from you.</p>
+        <p style={{ fontSize: '1.125rem', color: '#06b6d4', marginTop: '24px' }}>Email: contact@sciencefortomorrow.com</p>
       </div>
     </div>
   )
+}
