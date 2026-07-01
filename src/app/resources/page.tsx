@@ -7,9 +7,9 @@ export default function Resources() {
       padding: '32px',
     }}>
       <div style={{ maxWidth: '896px', margin: '0 auto' }}>
-        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '24px' }}>Educational Resources</h1>
+        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', margin: '0 0 24px 0' }}>Educational Resources</h1>
         <p style={{ fontSize: '1.125rem', color: '#d1d5db' }}>Learn about groundbreaking science and research.</p>
       </div>
     </div>
-  )
+  );
 }

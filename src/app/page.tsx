@@ -8,7 +8,6 @@ export default function Home() {
       alignItems: 'center',
       justifyContent: 'center',
       padding: '20px',
-      fontFamily: 'system-ui, -apple-system, sans-serif',
     }}>
       <div style={{ textAlign: 'center', maxWidth: '896px' }}>
         <h1 style={{ fontSize: '3.75rem', fontWeight: 'bold', margin: '0 0 24px 0' }}>Science For Tomorrow</h1>
@@ -27,6 +26,7 @@ export default function Home() {
             borderRadius: '8px',
             textDecoration: 'none',
             display: 'inline-block',
+            cursor: 'pointer',
           }}>
             Learn More
           </a>
@@ -39,6 +39,7 @@ export default function Home() {
             textDecoration: 'none',
             display: 'inline-block',
             background: 'transparent',
+            cursor: 'pointer',
           }}>
             Explore
           </a>

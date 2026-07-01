@@ -7,15 +7,15 @@ export default function About() {
       padding: '32px',
     }}>
       <div style={{ maxWidth: '896px', margin: '0 auto' }}>
-        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '24px' }}>About Science For Tomorrow</h1>
-        <p style={{ fontSize: '1.25rem', color: '#d1d5db', marginBottom: '24px' }}>
+        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', margin: '0 0 24px 0' }}>About Science For Tomorrow</h1>
+        <p style={{ fontSize: '1.25rem', color: '#d1d5db', margin: '0 0 24px 0' }}>
           Founded by Ved Saparia, Science For Tomorrow is dedicated to inspiring scientific curiosity.
         </p>
-        <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginTop: '40px', marginBottom: '16px' }}>Our Mission</h2>
-        <p style={{ fontSize: '1.125rem', color: '#9ca3af', marginBottom: '24px' }}>
+        <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', margin: '40px 0 16px 0' }}>Our Mission</h2>
+        <p style={{ fontSize: '1.125rem', color: '#9ca3af', margin: '0 0 24px 0' }}>
           To inspire scientific curiosity, connect researchers with global audiences, and support organizations advancing humanity.
         </p>
       </div>
     </div>
-  )
+  );
 }
