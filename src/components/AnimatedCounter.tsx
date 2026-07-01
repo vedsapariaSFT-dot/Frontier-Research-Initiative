@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { motion } from 'framer-motion'
 
 interface AnimatedCounterProps {
   end: number
@@ -45,16 +44,26 @@ export default function AnimatedCounter({
   }, [isVisible, end, duration])
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      className="text-center"
+      style={{
+        textAlign: 'center',
+        opacity: isVisible ? 1 : 0.5,
+        transition: 'opacity 0.3s',
+      }}
     >
-      <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent mb-2">
+      <div style={{
+        fontSize: '3rem',
+        fontWeight: 'bold',
+        background: 'linear-gradient(90deg, #06b6d4, #0891b2)',
+        backgroundClip: 'text',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        marginBottom: '8px',
+      }}>
         {count.toLocaleString()}{suffix}
       </div>
-      {label && <p className="text-gray-400 text-sm">{label}</p>}
-    </motion.div>
+      {label && <p style={{ color: '#9ca3af', fontSize: '0.875rem' }}>{label}</p>}
+    </div>
   )
 }
